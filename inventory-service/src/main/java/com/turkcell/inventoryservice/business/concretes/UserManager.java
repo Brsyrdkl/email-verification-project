@@ -56,7 +56,7 @@ public class UserManager implements UserService {
     public UpdateUserResponse update(UUID id, UpdateUserRequest request) {
         //TODO: business rules
         var user = mapper.forRequest().map(request, User.class);
-        user.setId(id);
+        user.setUserId(id);
         repository.save(user);
         var response = mapper.forResponse().map(user, UpdateUserResponse.class);
 

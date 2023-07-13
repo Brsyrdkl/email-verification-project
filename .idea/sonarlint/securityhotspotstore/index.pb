@@ -1,16 +1,6 @@
 
 L
 inventory-service/.gitignore,5\4\54bbdce7478dcbdd692398e630cfd000a2d5a000
-é
-^inventory-service/src/main/java/com/turkcell/inventoryservice/InventoryServiceApplication.java,4\f\4fa1f022ff8671dd86011d5ae7b531771bd5a67a
-ç
-]inventory-service/src/main/java/com/turkcell/inventoryservice/entities/ConfirmationToken.java,b\a\ba9979f2c79777e6d14789ce5b386e4324978045
-å
-\inventory-service/src/main/java/com/turkcell/inventoryservice/repository/UserRepository.java,1\1\119babaa15b6ffe2336f3d9836afdd86a948a44a
-ô
-iinventory-service/src/main/java/com/turkcell/inventoryservice/repository/ConfirmationTokenRepository.java,4\5\45461512d0b8b94be102c9e44b6ccaa4b337400d
-Ä
-Pinventory-service/src/main/java/com/turkcell/inventoryservice/entities/User.java,9\a\9adbca73f3f454c9f0b1cc6c40200c9a68d00507
 °
 qinventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/requests/create/CreateUserRequest.java,1\4\14e38daedf0134ef065f8325bd1ef1e3e1f37359
 £
