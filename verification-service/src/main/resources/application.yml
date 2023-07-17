@@ -1,17 +1,29 @@
 spring:
   application:
-    name: inventory-service
+    name: verification-service
 
   datasource:
     username: root
     password: 1598753
-    url: jdbc:mysql://localhost:3307/inventorydb?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3308/verificationdb?createDatabaseIfNotExist=true
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
+
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    host: smtp.gmail.com
+    username: barisyurdakul.by@gmail.com
+    password: 18083543574
+    port: '587'
 
 eureka:
   client:
@@ -24,4 +36,5 @@ eureka:
     prefer-ip-address: true
 server:
   port: 0
+
 
