@@ -8,17 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
+        <module name="common-package-email" />
         <module name="inventory-service" />
         <module name="discovery-server" />
         <module name="verification-service" />
-        <module name="common-package" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-package" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="common-package" options="-parameters" />
+      <module name="common-package-email" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="inventory-service" options="-parameters" />
       <module name="verification-service" options="-parameters" />

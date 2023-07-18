@@ -1,15 +1,11 @@
 
 L
 inventory-service/.gitignore,5\4\54bbdce7478dcbdd692398e630cfd000a2d5a000
-°
-qinventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/get/GetAllUsersResponse.java,6\a\6a8a2330f8aee6c064b4f09805f4a30623212554
-£
-sinventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/update/UpdateUserResponse.java,b\a\ba68333ea19c284e189216733e375982fd468e5e
-ù
-minventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/get/GetUserResponse.java,f\9\f9f1af02bc0c4e0bf2218cc6bd865aa5960b30e1
-°
-qinventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/requests/create/CreateUserRequest.java,1\4\14e38daedf0134ef065f8325bd1ef1e3e1f37359
 d
 4inventory-service/src/main/resources/application.yml,7\b\7b8fc05d9cddc68f2426daf34b37ac870e018f85
-í
-binventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/EMailManager.java,a\f\af7fa54b5dcdca26e09dedaae660ce529d13afe5
+®
+xverification-service/src/main/java/com/turkcell/verificationservice/business/dto/requests/update/UpdateTokenRequest.java,f\8\f87ae42bbc009f08f859b20b9eac268787f4c6e8
+ò
+hverification-service/src/main/java/com/turkcell/verificationservice/business/abstracts/TokenService.java,6\c\6c54337193d5a9d7614469441148f4f4d9abcf53
+|
+Lapi-gateway/src/main/java/com/turkcell/apigateway/ApiGatewayApplication.java,e\0\e08390a65de809a80c497f5afd0677d34bffcb22

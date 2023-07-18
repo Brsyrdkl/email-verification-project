@@ -5,16 +5,24 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.UUID;
+
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateUserRequest {
 
+    private UUID emailId;
+
     private String username;
 
-    private String email;
+    private String firstName;
+
+    private String lastName;
 
     private String password;
+
+    private boolean isEnabled;
 
 }

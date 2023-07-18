@@ -35,18 +35,6 @@ services:
       - verificationdb_data:/data/db
 
 
-  keycloak:
-    image: quay.io/keycloak/keycloak:latest
-    container_name: keycloak-turkcell
-    environment:
-      KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD: admin
-    ports:
-      - "8080:8080"
-    command: start-dev
-    volumes:
-      - .:/opt/jboss/keycloak/imports
-
 volumes:
   kafkadbemail_data:
   inventorydb_data:

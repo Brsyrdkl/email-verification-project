@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages = {"com.turkcell.verificationservice","com.kodlamaio.commonpackage"})
+@SpringBootApplication(scanBasePackages = {"com.turkcell.verificationservice","com.turkcell.commonpackageemail"})
 public class VerificationServiceApplication {
 
     public static void main(String[] args) {

@@ -1,7 +1,10 @@
 spring:
   application:
     name: inventory-service
-
+  security:
+    user:
+      name: admin
+      password: admin
   datasource:
     username: root
     password: 1598753

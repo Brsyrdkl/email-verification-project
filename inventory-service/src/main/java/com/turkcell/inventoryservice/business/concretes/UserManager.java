@@ -1,6 +1,5 @@
 package com.turkcell.inventoryservice.business.concretes;
 
-import com.kodlamaio.commonpackage.utils.mappers.ModelMapperService;
 import com.turkcell.inventoryservice.business.abstracts.UserService;
 import com.turkcell.inventoryservice.business.dto.requests.create.CreateUserRequest;
 import com.turkcell.inventoryservice.business.dto.requests.update.UpdateUserRequest;
@@ -11,6 +10,7 @@ import com.turkcell.inventoryservice.business.dto.responses.update.UpdateUserRes
 import com.turkcell.inventoryservice.entities.User;
 import com.turkcell.inventoryservice.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,14 +21,14 @@ import java.util.UUID;
 public class UserManager implements UserService {
 
     private final UserRepository repository;
-    private final ModelMapperService mapper;
+    private final ModelMapper mapper;
 
     @Override
     public List<GetAllUsersResponse> getAll() {
         var users = repository.findAll();
         var response = users
                 .stream()
-                .map(user -> mapper.forResponse().map(user, GetAllUsersResponse.class))
+                .map(user -> mapper.map(user, GetAllUsersResponse.class))
                 .toList();
 
         return response;
@@ -38,16 +38,16 @@ public class UserManager implements UserService {
     public GetUserResponse getById(UUID id) {
         //TODO: business rules
         var user = repository.findById(id).orElseThrow();
-        var response = mapper.forResponse().map(user, GetUserResponse.class);
+        var response = mapper.map(user, GetUserResponse.class);
 
         return response;
     }
 
     @Override
     public CreateUserResponse add(CreateUserRequest request) {
-        var user = mapper.forRequest().map(request, User.class);
+        var user = mapper.map(request, User.class);
         repository.save(user);
-        var response = mapper.forResponse().map(user, CreateUserResponse.class);
+        var response = mapper.map(user, CreateUserResponse.class);
 
         return response;
     }
@@ -55,10 +55,10 @@ public class UserManager implements UserService {
     @Override
     public UpdateUserResponse update(UUID id, UpdateUserRequest request) {
         //TODO: business rules
-        var user = mapper.forRequest().map(request, User.class);
-        user.setUserId(id);
+        var user = mapper.map(request, User.class);
+        user.setId(id);
         repository.save(user);
-        var response = mapper.forResponse().map(user, UpdateUserResponse.class);
+        var response = mapper.map(user, UpdateUserResponse.class);
 
         return response;
     }

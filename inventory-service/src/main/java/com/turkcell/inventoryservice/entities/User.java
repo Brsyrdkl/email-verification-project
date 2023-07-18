@@ -17,17 +17,14 @@ import java.util.UUID;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name="user_id")
-    private UUID userId;
+    private UUID id;
 
-    private String emailId;
+    private UUID emailId;
 
     private String username;
 
-    @Column(name="first_name")
     private String firstName;
 
-    @Column(name="last_name")
     private String lastName;
 
     private String password;

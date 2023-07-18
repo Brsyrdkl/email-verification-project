@@ -14,10 +14,16 @@ import java.util.UUID;
 public class CreateUserResponse {
     private UUID id;
 
+    private UUID emailId;
+
     private String username;
 
-    private String email;
+    private String firstName;
+
+    private String lastName;
 
     private String password;
+
+    private boolean isEnabled;
 
 }

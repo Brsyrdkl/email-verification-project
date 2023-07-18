@@ -18,8 +18,7 @@ import java.util.UUID;
 public class Token {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name="token_id")
-    private UUID tokenId;
+    private UUID id;
 
     @Column(name="confirmation_token")
     private String confirmationToken;

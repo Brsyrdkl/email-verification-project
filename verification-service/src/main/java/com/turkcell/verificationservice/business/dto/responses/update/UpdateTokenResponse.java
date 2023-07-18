@@ -13,7 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateTokenResponse {
-    private UUID tokenId;
+    private UUID id;
 
     private String confirmationToken;
 
