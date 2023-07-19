@@ -9,10 +9,6 @@ xverification-service/src/main/java/com/turkcell/verificationservice/business/dt
 hverification-service/src/main/java/com/turkcell/verificationservice/business/abstracts/TokenService.java,6\c\6c54337193d5a9d7614469441148f4f4d9abcf53
 |
 Lapi-gateway/src/main/java/com/turkcell/apigateway/ApiGatewayApplication.java,e\0\e08390a65de809a80c497f5afd0677d34bffcb22
-Œ
-\inventory-service/src/main/java/com/turkcell/inventoryservice/repository/UserRepository.java,1\1\119babaa15b6ffe2336f3d9836afdd86a948a44a
-‘
-ainventory-service/src/main/java/com/turkcell/inventoryservice/business/abstracts/UserService.java,8\4\8457e495db4707215ed1436761fbf88e6987d044
 “
 cverification-service/src/main/java/com/turkcell/verificationservice/repository/TokenRepository.java,f\f\fff7a867b9fddc76da2fcb5c938db04c106a3000
 ¨
@@ -25,8 +21,6 @@ xverification-service/src/main/java/com/turkcell/verificationservice/business/dt
 tverification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/get/GetTokenResponse.java,f\2\f2ae293c612bdb1cfd84fd01c97c86b5f8a5dbf3
 ª
 zverification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/update/UpdateTokenResponse.java,f\6\f6d7ec0f51eaf4baf0f793856c41a34eed2637ee
-˜
-hverification-service/src/main/java/com/turkcell/verificationservice/api/controllers/TokenController.java,c\c\ccb1cd230581c1b55129d4c362f79eda7c21fe0f
 —
 gverification-service/src/main/java/com/turkcell/verificationservice/VerificationServiceApplication.java,8\9\899056bca0e23785b7fa43f63dcfecb7eb269ca0
 •
@@ -35,16 +29,8 @@ ecommon-package-email/src/main/java/com/turkcell/commonpackageemail/CommonPackag
 hverification-service/src/main/java/com/turkcell/verificationservice/business/concretes/TokenManager.java,3\5\35631e32bac61846845ea51873cd236f7eda4ac8
 ž
 ncommon-package-email/src/main/java/com/turkcell/commonpackageemail/configuration/mapper/ModelMapperConfig.java,6\a\6af8ccb961c7ea4937cf644cef3a9cfb84113daa
-‡
-Wverification-service/src/main/java/com/turkcell/verificationservice/entities/Token.java,e\a\ea420454f8a11d07daa73398eb5fce4660b0dff3
-B
-docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
-L
-verification-service/pom.xml,6\8\688cba43887ff1ac88d2ebf3bc37f39907892397
 H
 discovery-server/pom.xml,2\c\2c58c7878e43d126fc56cae853d5b06de57d0b3e
-I
-inventory-service/pom.xml,e\3\e347da292c40d252c508703eddff460d1f378f1c
 ‹
 [discovery-server/src/main/java/com/turkcell/discoveryserver/DiscoveryServerApplication.java,4\9\49b79ce71419603d06917c3e91514b7d955f1832
 Ž

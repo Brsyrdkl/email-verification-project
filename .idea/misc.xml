@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
         <option value="$PROJECT_DIR$/verification-service/pom.xml" />
         <option value="$PROJECT_DIR$/common-package-email/pom.xml" />
+        <option value="$PROJECT_DIR$/email-service/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,11 +1,13 @@
 package com.turkcell.inventoryservice.entities;
 
+import com.turkcell.emailservice.entities.EMail;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -28,5 +30,8 @@ public class User {
     private String password;
 
     private boolean isEnabled;
+
+    @OneToMany(mappedBy = "user")
+    private List<EMail> emails;
 
 }

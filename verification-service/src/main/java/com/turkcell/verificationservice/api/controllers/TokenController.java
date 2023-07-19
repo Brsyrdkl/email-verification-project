@@ -17,7 +17,7 @@ import java.util.UUID;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/api/users")
+@RequestMapping("/api/tokens")
 public class TokenController {
     private final TokenService service;
 
