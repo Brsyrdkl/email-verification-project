@@ -14,8 +14,6 @@ import java.util.UUID;
 public class UpdateUserResponse {
     private UUID id;
 
-    private UUID emailId;
-
     private String username;
 
     private String firstName;

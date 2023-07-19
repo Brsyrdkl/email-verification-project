@@ -13,8 +13,6 @@ import java.util.UUID;
 @AllArgsConstructor
 public class UpdateUserRequest {
 
-    private UUID emailId;
-
     private String username;
 
     private String firstName;

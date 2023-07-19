@@ -7,6 +7,7 @@ import com.turkcell.inventoryservice.business.dto.responses.create.CreateUserRes
 import com.turkcell.inventoryservice.business.dto.responses.get.GetAllUsersResponse;
 import com.turkcell.inventoryservice.business.dto.responses.get.GetUserResponse;
 import com.turkcell.inventoryservice.business.dto.responses.update.UpdateUserResponse;
+import com.turkcell.inventoryservice.business.rules.UserBusinessRules;
 import com.turkcell.inventoryservice.entities.User;
 import com.turkcell.inventoryservice.repository.UserRepository;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,7 @@ import java.util.UUID;
 public class UserManager implements UserService {
 
     private final UserRepository repository;
+    private final UserBusinessRules rules;
     private final ModelMapper mapper;
 
     @Override
@@ -36,7 +38,7 @@ public class UserManager implements UserService {
 
     @Override
     public GetUserResponse getById(UUID id) {
-        //TODO: business rules
+        rules.checkIfUserExists(id);
         var user = repository.findById(id).orElseThrow();
         var response = mapper.map(user, GetUserResponse.class);
 
@@ -46,6 +48,7 @@ public class UserManager implements UserService {
     @Override
     public CreateUserResponse add(CreateUserRequest request) {
         var user = mapper.map(request, User.class);
+        user.setId(UUID.randomUUID());
         repository.save(user);
         var response = mapper.map(user, CreateUserResponse.class);
 
@@ -54,7 +57,7 @@ public class UserManager implements UserService {
 
     @Override
     public UpdateUserResponse update(UUID id, UpdateUserRequest request) {
-        //TODO: business rules
+        rules.checkIfUserExists(id);
         var user = mapper.map(request, User.class);
         user.setId(id);
         repository.save(user);
@@ -65,7 +68,7 @@ public class UserManager implements UserService {
 
     @Override
     public void delete(UUID id) {
-        //TODO: business rules
+        rules.checkIfUserExists(id);
         repository.deleteById(id);
     }
 }

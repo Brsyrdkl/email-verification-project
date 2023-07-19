@@ -5,35 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73a7797b-ff60-4aca-aaf8-1c60f75d0887" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/636b5264-4379-4c35-8057-5fa81f4e79e5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/636b5264-4379-4c35-8057-5fa81f4e79e5/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/636b5264-4379-4c35-8057-5fa81f4e79e5/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/636b5264-4379-4c35-8057-5fa81f4e79e5/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/636b5264-4379-4c35-8057-5fa81f4e79e5/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14e38daedf0134ef065f8325bd1ef1e3e1f37359" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a8a2330f8aee6c064b4f09805f4a30623212554" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af7fa54b5dcdca26e09dedaae660ce529d13afe5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba68333ea19c284e189216733e375982fd468e5e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9f1af02bc0c4e0bf2218cc6bd865aa5960b30e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/4/14e38daedf0134ef065f8325bd1ef1e3e1f37359" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/a/6a8a2330f8aee6c064b4f09805f4a30623212554" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/f/af7fa54b5dcdca26e09dedaae660ce529d13afe5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/a/ba68333ea19c284e189216733e375982fd468e5e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/9/f9f1af02bc0c4e0bf2218cc6bd865aa5960b30e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8c7f186d-632d-44c7-b214-503339fa6dfc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8c7f186d-632d-44c7-b214-503339fa6dfc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/requests/create/CreateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/requests/create/CreateUserRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/requests/update/UpdateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/requests/update/UpdateUserRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/create/CreateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/create/CreateUserResponse.java" afterDir="false" />
@@ -41,16 +16,6 @@
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/get/GetUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/get/GetUserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/update/UpdateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/responses/update/UpdateUserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/VerificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/VerificationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/concretes/TokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/concretes/TokenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/create/CreateTokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/create/CreateTokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/get/GetAllTokensResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/get/GetAllTokensResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/get/GetTokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/get/GetTokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/update/UpdateTokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/update/UpdateTokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/entities/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/entities/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/repository/TokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-service/src/main/java/com/turkcell/verificationservice/repository/TokenRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +167,7 @@
       <workItem from="1689574016811" duration="3392000" />
       <workItem from="1689587057070" duration="10131000" />
       <workItem from="1689661651693" duration="1878000" />
-      <workItem from="1689663598341" duration="9591000" />
+      <workItem from="1689663598341" duration="11488000" />
     </task>
     <servers />
   </component>

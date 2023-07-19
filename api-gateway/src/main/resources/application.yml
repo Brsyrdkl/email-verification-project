@@ -7,6 +7,18 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+
+      routes:
+        - id: inventory-service
+          uri: lb://inventory-service
+          predicates:
+            - Path=/inventory-service/api/**
+            - Method=GET,POST,PUT,DELETE
+        - id: verification-service
+          uri: lb://verification-service
+          predicates:
+            - Path=/verification-service/api/**
+            - Method=GET,POST,PUT,DELETE
 eureka:
   client:
     fetch-registry: true

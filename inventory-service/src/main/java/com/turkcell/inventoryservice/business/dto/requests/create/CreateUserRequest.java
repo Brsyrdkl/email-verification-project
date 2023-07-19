@@ -12,7 +12,6 @@ import java.util.UUID;
 @AllArgsConstructor
 public class CreateUserRequest {
 
-    private UUID emailId;
 
     private String username;
 
