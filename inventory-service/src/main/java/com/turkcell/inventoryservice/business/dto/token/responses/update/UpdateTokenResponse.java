@@ -1,4 +1,4 @@
-package com.turkcell.verificationservice.business.dto.responses.update;
+package com.turkcell.inventoryservice.business.dto.token.responses.update;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

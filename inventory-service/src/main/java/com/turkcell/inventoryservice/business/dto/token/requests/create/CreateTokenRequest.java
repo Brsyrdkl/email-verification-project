@@ -1,4 +1,4 @@
-package com.turkcell.verificationservice.business.dto.requests.update;
+package com.turkcell.inventoryservice.business.dto.token.requests.create;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateTokenRequest {
+public class CreateTokenRequest {
     private UUID userId;
     private String confirmationToken;
     private Date createdDate;

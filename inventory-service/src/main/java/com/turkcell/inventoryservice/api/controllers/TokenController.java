@@ -1,4 +1,4 @@
-package com.turkcell.verificationservice.api.controllers;
+package com.turkcell.inventoryservice.api.controllers;
 
 import com.turkcell.verificationservice.business.abstracts.TokenService;
 import com.turkcell.verificationservice.business.dto.requests.create.CreateTokenRequest;

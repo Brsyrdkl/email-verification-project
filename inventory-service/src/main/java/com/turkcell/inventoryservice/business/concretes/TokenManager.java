@@ -1,4 +1,4 @@
-package com.turkcell.verificationservice.business.concretes;
+package com.turkcell.inventoryservice.business.concretes;
 
 import com.turkcell.verificationservice.business.abstracts.TokenService;
 import com.turkcell.verificationservice.business.dto.requests.create.CreateTokenRequest;

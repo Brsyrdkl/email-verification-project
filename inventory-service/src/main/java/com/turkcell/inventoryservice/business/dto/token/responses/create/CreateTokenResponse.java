@@ -1,4 +1,4 @@
-package com.turkcell.verificationservice.business.dto.responses.get;
+package com.turkcell.inventoryservice.business.dto.token.responses.create;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,10 +12,12 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class GetTokenResponse {
+public class CreateTokenResponse {
     private UUID id;
     private UUID userId;
+
     private String confirmationToken;
 
     private Date createdDate;
 }
+

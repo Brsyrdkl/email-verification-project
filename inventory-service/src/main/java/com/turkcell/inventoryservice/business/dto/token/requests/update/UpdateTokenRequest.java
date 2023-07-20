@@ -1,8 +1,5 @@
-package com.turkcell.verificationservice.business.dto.responses.create;
+package com.turkcell.inventoryservice.business.dto.token.requests.update;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,12 +12,8 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateTokenResponse {
-    private UUID id;
+public class UpdateTokenRequest {
     private UUID userId;
-
     private String confirmationToken;
-
     private Date createdDate;
 }
-

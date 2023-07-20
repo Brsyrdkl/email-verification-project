@@ -1,4 +1,4 @@
-package com.turkcell.verificationservice.entities;
+package com.turkcell.inventoryservice.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
