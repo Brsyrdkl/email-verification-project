@@ -30,8 +30,10 @@ public class User {
 
     private boolean isEnabled;
 
-    private UUID tokenId;
+    @OneToOne
+    private Token token;
 
-    private UUID emailId;
+    @OneToOne
+    private EMail eMail;
 
 }

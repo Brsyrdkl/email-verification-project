@@ -11,12 +11,12 @@
         <module name="common-package-email" />
         <module name="inventory-service" />
         <module name="discovery-server" />
-        <module name="verification-service" />
-        <module name="email-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common-package" target="17" />
+      <module name="email-service" target="17" />
+      <module name="verification-service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

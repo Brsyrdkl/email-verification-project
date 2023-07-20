@@ -1,5 +1,6 @@
 package com.turkcell.inventoryservice.business.dto.email.responses.update;
 
+import com.turkcell.inventoryservice.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,9 +16,8 @@ public class UpdateEMailResponse {
 
     private UUID id;
 
-    private UUID userId;
 
     private String email;
 
-    private String userUsername;
+    private User user;
 }

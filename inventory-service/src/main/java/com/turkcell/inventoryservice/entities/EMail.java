@@ -21,5 +21,6 @@ public class EMail {
 
     private String email;
 
-    private UUID userId;
+    @OneToOne
+    private User user;
 }

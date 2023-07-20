@@ -1,6 +1,6 @@
 package com.turkcell.inventoryservice.repository;
 
-import com.turkcell.verificationservice.entities.Token;
+import com.turkcell.inventoryservice.entities.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

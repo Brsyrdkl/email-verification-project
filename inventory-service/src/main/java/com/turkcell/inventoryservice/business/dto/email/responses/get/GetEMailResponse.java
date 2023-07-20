@@ -1,5 +1,6 @@
 package com.turkcell.inventoryservice.business.dto.email.responses.get;
 
+import com.turkcell.inventoryservice.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class GetEMailResponse {
     private UUID id;
-    private UUID userId;
+
     private String email;
-    private String userUsername;
+    private User user;
 }

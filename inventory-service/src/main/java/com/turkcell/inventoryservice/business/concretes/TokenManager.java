@@ -1,14 +1,15 @@
 package com.turkcell.inventoryservice.business.concretes;
 
-import com.turkcell.verificationservice.business.abstracts.TokenService;
-import com.turkcell.verificationservice.business.dto.requests.create.CreateTokenRequest;
-import com.turkcell.verificationservice.business.dto.requests.update.UpdateTokenRequest;
-import com.turkcell.verificationservice.business.dto.responses.create.CreateTokenResponse;
-import com.turkcell.verificationservice.business.dto.responses.get.GetAllTokensResponse;
-import com.turkcell.verificationservice.business.dto.responses.get.GetTokenResponse;
-import com.turkcell.verificationservice.business.dto.responses.update.UpdateTokenResponse;
-import com.turkcell.verificationservice.entities.Token;
-import com.turkcell.verificationservice.repository.TokenRepository;
+
+import com.turkcell.inventoryservice.business.abstracts.TokenService;
+import com.turkcell.inventoryservice.business.dto.token.requests.create.CreateTokenRequest;
+import com.turkcell.inventoryservice.business.dto.token.requests.update.UpdateTokenRequest;
+import com.turkcell.inventoryservice.business.dto.token.responses.create.CreateTokenResponse;
+import com.turkcell.inventoryservice.business.dto.token.responses.get.GetAllTokensResponse;
+import com.turkcell.inventoryservice.business.dto.token.responses.get.GetTokenResponse;
+import com.turkcell.inventoryservice.business.dto.token.responses.update.UpdateTokenResponse;
+import com.turkcell.inventoryservice.entities.Token;
+import com.turkcell.inventoryservice.repository.TokenRepository;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;

@@ -1,15 +1,15 @@
 package com.turkcell.inventoryservice.business.concretes;
 
-import com.turkcell.emailservice.business.abstracts.EMailService;
-import com.turkcell.emailservice.business.dto.requests.create.CreateEMailRequest;
-import com.turkcell.emailservice.business.dto.requests.update.UpdateEMailRequest;
-import com.turkcell.emailservice.business.dto.responses.create.CreateEMailResponse;
-import com.turkcell.emailservice.business.dto.responses.get.GetAllEMailsResponse;
-import com.turkcell.emailservice.business.dto.responses.get.GetEMailResponse;
-import com.turkcell.emailservice.business.dto.responses.update.UpdateEMailResponse;
-import com.turkcell.emailservice.business.rules.EMailBusinessRules;
-import com.turkcell.emailservice.entities.EMail;
-import com.turkcell.emailservice.repository.EMailRepository;
+import com.turkcell.inventoryservice.business.abstracts.EMailService;
+import com.turkcell.inventoryservice.business.dto.email.requests.create.CreateEMailRequest;
+import com.turkcell.inventoryservice.business.dto.email.requests.update.UpdateEMailRequest;
+import com.turkcell.inventoryservice.business.dto.email.responses.create.CreateEMailResponse;
+import com.turkcell.inventoryservice.business.dto.email.responses.get.GetAllEMailsResponse;
+import com.turkcell.inventoryservice.business.dto.email.responses.get.GetEMailResponse;
+import com.turkcell.inventoryservice.business.dto.email.responses.update.UpdateEMailResponse;
+import com.turkcell.inventoryservice.business.rules.EMailBusinessRules;
+import com.turkcell.inventoryservice.entities.EMail;
+import com.turkcell.inventoryservice.repository.EMailRepository;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.mail.SimpleMailMessage;

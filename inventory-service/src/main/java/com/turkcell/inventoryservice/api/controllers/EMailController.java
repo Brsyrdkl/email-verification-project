@@ -1,12 +1,12 @@
 package com.turkcell.inventoryservice.api.controllers;
 
-import com.turkcell.emailservice.business.abstracts.EMailService;
-import com.turkcell.emailservice.business.dto.requests.create.CreateEMailRequest;
-import com.turkcell.emailservice.business.dto.requests.update.UpdateEMailRequest;
-import com.turkcell.emailservice.business.dto.responses.create.CreateEMailResponse;
-import com.turkcell.emailservice.business.dto.responses.get.GetAllEMailsResponse;
-import com.turkcell.emailservice.business.dto.responses.get.GetEMailResponse;
-import com.turkcell.emailservice.business.dto.responses.update.UpdateEMailResponse;
+import com.turkcell.inventoryservice.business.abstracts.EMailService;
+import com.turkcell.inventoryservice.business.dto.email.requests.create.CreateEMailRequest;
+import com.turkcell.inventoryservice.business.dto.email.requests.update.UpdateEMailRequest;
+import com.turkcell.inventoryservice.business.dto.email.responses.create.CreateEMailResponse;
+import com.turkcell.inventoryservice.business.dto.email.responses.get.GetAllEMailsResponse;
+import com.turkcell.inventoryservice.business.dto.email.responses.get.GetEMailResponse;
+import com.turkcell.inventoryservice.business.dto.email.responses.update.UpdateEMailResponse;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

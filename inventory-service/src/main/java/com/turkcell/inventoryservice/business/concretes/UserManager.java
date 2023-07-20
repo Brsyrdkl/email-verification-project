@@ -1,7 +1,6 @@
 package com.turkcell.inventoryservice.business.concretes;
 
-import com.turkcell.emailservice.business.abstracts.EMailService;
-import com.turkcell.emailservice.repository.EMailRepository;
+import com.turkcell.inventoryservice.business.abstracts.EMailService;
 import com.turkcell.inventoryservice.business.abstracts.UserService;
 import com.turkcell.inventoryservice.business.dto.user.requests.create.CreateUserRequest;
 import com.turkcell.inventoryservice.business.dto.user.requests.update.UpdateUserRequest;
@@ -10,10 +9,12 @@ import com.turkcell.inventoryservice.business.dto.user.responses.get.GetAllUsers
 import com.turkcell.inventoryservice.business.dto.user.responses.get.GetUserResponse;
 import com.turkcell.inventoryservice.business.dto.user.responses.update.UpdateUserResponse;
 import com.turkcell.inventoryservice.business.rules.UserBusinessRules;
+import com.turkcell.inventoryservice.entities.Token;
 import com.turkcell.inventoryservice.entities.User;
+import com.turkcell.inventoryservice.repository.EMailRepository;
+import com.turkcell.inventoryservice.repository.TokenRepository;
 import com.turkcell.inventoryservice.repository.UserRepository;
-import com.turkcell.verificationservice.entities.Token;
-import com.turkcell.verificationservice.repository.TokenRepository;
+
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
@@ -61,7 +62,7 @@ public class UserManager implements UserService {
         user.setEnabled(false);
         user.setId(UUID.randomUUID());
         sendMailMessage(user);
-        confirmEmail(tokenRepository.findTokenById(user.getTokenId()).getConfirmationToken());
+        confirmEmail(user.getToken().getConfirmationToken());
         var response = mapper.map(user, CreateUserResponse.class);
 
         return response;
@@ -86,10 +87,10 @@ public class UserManager implements UserService {
 
     public ResponseEntity<?> sendMailMessage(User user){
 
-        Token token = tokenRepository.findTokenById(user.getTokenId());
+        Token token = tokenRepository.findTokenById(user.getToken().getId());
         SimpleMailMessage mailMessage = new SimpleMailMessage();
 
-        mailMessage.setTo(emailRepository.findEMailById(user.getEmailId()).getEmail());;
+        mailMessage.setTo(user.getEMail().getEmail());;
         mailMessage.setSubject("Complete Registration!");
         mailMessage.setText("To confirm your account, please click here : "
                 +"http://localhost:8085/confirm-account?token="+token.getConfirmationToken());

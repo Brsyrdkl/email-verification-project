@@ -26,5 +26,6 @@ public class Token {
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdDate;
 
-    private UUID userId;
+    @OneToOne
+    private User user;
 }
