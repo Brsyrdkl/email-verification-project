@@ -1,11 +1,11 @@
 package com.turkcell.inventoryservice.business.abstracts;
 
-import com.turkcell.inventoryservice.business.dto.requests.create.CreateUserRequest;
-import com.turkcell.inventoryservice.business.dto.requests.update.UpdateUserRequest;
-import com.turkcell.inventoryservice.business.dto.responses.create.CreateUserResponse;
-import com.turkcell.inventoryservice.business.dto.responses.get.GetAllUsersResponse;
-import com.turkcell.inventoryservice.business.dto.responses.get.GetUserResponse;
-import com.turkcell.inventoryservice.business.dto.responses.update.UpdateUserResponse;
+import com.turkcell.inventoryservice.business.dto.user.requests.create.CreateUserRequest;
+import com.turkcell.inventoryservice.business.dto.user.requests.update.UpdateUserRequest;
+import com.turkcell.inventoryservice.business.dto.user.responses.create.CreateUserResponse;
+import com.turkcell.inventoryservice.business.dto.user.responses.get.GetAllUsersResponse;
+import com.turkcell.inventoryservice.business.dto.user.responses.get.GetUserResponse;
+import com.turkcell.inventoryservice.business.dto.user.responses.update.UpdateUserResponse;
 
 import java.util.List;
 import java.util.UUID;

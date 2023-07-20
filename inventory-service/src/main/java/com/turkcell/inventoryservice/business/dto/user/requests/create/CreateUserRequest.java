@@ -1,24 +1,20 @@
-package com.turkcell.inventoryservice.entities;
+package com.turkcell.inventoryservice.business.dto.user.requests.create;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 import java.util.UUID;
-
-@Entity
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "user")
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+public class CreateUserRequest {
+
+    private UUID tokenId;
+
+    private UUID emailId;
 
     private String username;
 
@@ -30,8 +26,5 @@ public class User {
 
     private boolean isEnabled;
 
-    private UUID tokenId;
-
-    private UUID emailId;
-
 }
+

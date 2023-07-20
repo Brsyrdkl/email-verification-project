@@ -1,12 +1,12 @@
 package com.turkcell.inventoryservice.api.controllers;
 
 import com.turkcell.inventoryservice.business.abstracts.UserService;
-import com.turkcell.inventoryservice.business.dto.requests.create.CreateUserRequest;
-import com.turkcell.inventoryservice.business.dto.requests.update.UpdateUserRequest;
-import com.turkcell.inventoryservice.business.dto.responses.create.CreateUserResponse;
-import com.turkcell.inventoryservice.business.dto.responses.get.GetAllUsersResponse;
-import com.turkcell.inventoryservice.business.dto.responses.get.GetUserResponse;
-import com.turkcell.inventoryservice.business.dto.responses.update.UpdateUserResponse;
+import com.turkcell.inventoryservice.business.dto.user.requests.create.CreateUserRequest;
+import com.turkcell.inventoryservice.business.dto.user.requests.update.UpdateUserRequest;
+import com.turkcell.inventoryservice.business.dto.user.responses.create.CreateUserResponse;
+import com.turkcell.inventoryservice.business.dto.user.responses.get.GetAllUsersResponse;
+import com.turkcell.inventoryservice.business.dto.user.responses.get.GetUserResponse;
+import com.turkcell.inventoryservice.business.dto.user.responses.update.UpdateUserResponse;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -1,19 +1,20 @@
-package com.turkcell.verificationservice.business.dto.requests.create;
+package com.turkcell.inventoryservice.business.dto.email.requests.create;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
 import java.util.UUID;
 
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateTokenRequest {
+public class CreateEMailRequest {
     private UUID userId;
-    private String confirmationToken;
-    private Date createdDate;
+    private String email;
+
+    private String userUsername;
 }
+

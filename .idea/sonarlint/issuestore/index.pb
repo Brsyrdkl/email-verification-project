@@ -3,24 +3,10 @@ L
 inventory-service/.gitignore,5\4\54bbdce7478dcbdd692398e630cfd000a2d5a000
 d
 4inventory-service/src/main/resources/application.yml,7\b\7b8fc05d9cddc68f2426daf34b37ac870e018f85
-®
-xverification-service/src/main/java/com/turkcell/verificationservice/business/dto/requests/update/UpdateTokenRequest.java,f\8\f87ae42bbc009f08f859b20b9eac268787f4c6e8
 ò
 hverification-service/src/main/java/com/turkcell/verificationservice/business/abstracts/TokenService.java,6\c\6c54337193d5a9d7614469441148f4f4d9abcf53
 |
 Lapi-gateway/src/main/java/com/turkcell/apigateway/ApiGatewayApplication.java,e\0\e08390a65de809a80c497f5afd0677d34bffcb22
-ì
-cverification-service/src/main/java/com/turkcell/verificationservice/repository/TokenRepository.java,f\f\fff7a867b9fddc76da2fcb5c938db04c106a3000
-®
-xverification-service/src/main/java/com/turkcell/verificationservice/business/dto/requests/create/CreateTokenRequest.java,a\f\afd0fdedd0db6c8cb812ddd32f924e4060b68ad1
-™
-zverification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/create/CreateTokenResponse.java,1\e\1e8c7293fa13cb115cb6d3bd55a1095d4a60740b
-®
-xverification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/get/GetAllTokensResponse.java,1\4\140a0e26ff57f0166f87f7c7ac4c722f4ca0ece0
-§
-tverification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/get/GetTokenResponse.java,f\2\f2ae293c612bdb1cfd84fd01c97c86b5f8a5dbf3
-™
-zverification-service/src/main/java/com/turkcell/verificationservice/business/dto/responses/update/UpdateTokenResponse.java,f\6\f6d7ec0f51eaf4baf0f793856c41a34eed2637ee
 ó
 gverification-service/src/main/java/com/turkcell/verificationservice/VerificationServiceApplication.java,8\9\899056bca0e23785b7fa43f63dcfecb7eb269ca0
 ï
@@ -37,3 +23,19 @@ H
 ^inventory-service/src/main/java/com/turkcell/inventoryservice/InventoryServiceApplication.java,4\f\4fa1f022ff8671dd86011d5ae7b531771bd5a67a
 L
 common-package-email/pom.xml,8\1\817fe7511589913b97f4961454ecdacb7dcf4ba3
+C
+api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
+ë
+ainventory-service/src/main/java/com/turkcell/inventoryservice/api/controllers/UserController.java,3\b\3b8d7815ee93fb8f24a59b9b0ebada2df97681b2
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+ë
+ainventory-service/src/main/java/com/turkcell/inventoryservice/business/abstracts/UserService.java,8\4\8457e495db4707215ed1436761fbf88e6987d044
+ì
+cinventory-service/src/main/java/com/turkcell/inventoryservice/business/rules/UserBusinessRules.java,4\1\418cbacc99b16a2f9a645aa26c9a8c364ea57d70
+ê
+`email-service/src/main/java/com/turkcell/emailservice/business/dto/rules/EMailBusinessRules.java,e\e\ee020960e64ceb5a782b077c90111782ac31405a
+ä
+Zemail-service/src/main/java/com/turkcell/emailservice/api/controllers/EMailController.java,0\f\0fba03d3b584b05215cfb0fc4c66470ea4dd695a
+ä
+Zemail-service/src/main/java/com/turkcell/emailservice/business/abstracts/EMailService.java,9\1\912c050dcbb3c178b0b4aab146e6454350295ea0

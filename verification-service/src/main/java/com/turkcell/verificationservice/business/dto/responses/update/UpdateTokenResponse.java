@@ -14,7 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class UpdateTokenResponse {
     private UUID id;
-
+    private UUID userId;
     private String confirmationToken;
 
     private Date createdDate;

@@ -17,6 +17,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class CreateTokenResponse {
     private UUID id;
+    private UUID userId;
 
     private String confirmationToken;
 
