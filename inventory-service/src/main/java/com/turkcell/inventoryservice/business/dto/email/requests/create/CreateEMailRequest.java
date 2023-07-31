@@ -14,9 +14,8 @@ import java.util.UUID;
 @AllArgsConstructor
 public class CreateEMailRequest {
 
-    private String email;
+    private String name;
 
-    private User user;
 
 }
 

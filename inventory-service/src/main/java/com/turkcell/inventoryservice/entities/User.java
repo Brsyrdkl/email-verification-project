@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -30,10 +29,12 @@ public class User {
 
     private boolean isEnabled;
 
-    @OneToOne
+    @OneToOne(orphanRemoval = true)
+    @JoinColumn(name = "token_id")
     private Token token;
 
-    @OneToOne
-    private EMail eMail;
+    @OneToOne(orphanRemoval = true)
+    @JoinColumn(name = "email_id")
+    private EMail email;
 
 }

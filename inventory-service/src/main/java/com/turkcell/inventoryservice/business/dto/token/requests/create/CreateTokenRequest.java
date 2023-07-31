@@ -14,8 +14,6 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CreateTokenRequest {
+    private String name;
 
-    private String confirmationToken;
-    private Date createdDate;
-    private User user;
 }

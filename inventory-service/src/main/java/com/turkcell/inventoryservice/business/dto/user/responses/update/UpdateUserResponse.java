@@ -12,10 +12,10 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateUserResponse {
-    private UUID id;
-    private UUID tokenId;
+    private String id;
+    private String tokenId;
 
-    private UUID emailId;
+    private String emailId;
     private String username;
 
     private String firstName;

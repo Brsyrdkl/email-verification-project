@@ -6,6 +6,8 @@ import com.turkcell.inventoryservice.business.dto.user.responses.create.CreateUs
 import com.turkcell.inventoryservice.business.dto.user.responses.get.GetAllUsersResponse;
 import com.turkcell.inventoryservice.business.dto.user.responses.get.GetUserResponse;
 import com.turkcell.inventoryservice.business.dto.user.responses.update.UpdateUserResponse;
+import com.turkcell.inventoryservice.entities.User;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 import java.util.UUID;
@@ -16,5 +18,9 @@ public interface UserService {
     CreateUserResponse add(CreateUserRequest request);
     UpdateUserResponse update(UUID id, UpdateUserRequest request);
     void delete(UUID id);
+
+    ResponseEntity<?> sendMailMessage(UUID userId);
+
+    ResponseEntity<?> confirmEmail(UUID userId);
 
 }

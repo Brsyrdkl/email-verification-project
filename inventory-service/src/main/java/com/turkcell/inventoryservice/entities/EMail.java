@@ -19,8 +19,8 @@ public class EMail {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    private String email;
+    private String name;
 
-    @OneToOne
+    @OneToOne(mappedBy = "email",cascade = CascadeType.ALL, orphanRemoval = true)
     private User user;
 }

@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.UUID;
 
@@ -14,10 +15,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GetTokenResponse {
-    private UUID id;
-
-    private String confirmationToken;
-
-    private Date createdDate;
-    private User user;
+    private String id;
+    private String name;
+    private LocalDateTime createdDate;
+    private String userId;
 }

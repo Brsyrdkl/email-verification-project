@@ -13,8 +13,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GetEMailResponse {
-    private UUID id;
+    private String id;
 
-    private String email;
-    private User user;
+    private String name;
+    private String userId;
 }

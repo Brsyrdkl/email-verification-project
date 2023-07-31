@@ -13,9 +13,9 @@ import java.util.UUID;
 @AllArgsConstructor
 public class UpdateUserRequest {
 
-    private UUID tokenId;
+    private String tokenId;
 
-    private UUID emailId;
+    private String emailId;
 
     private String username;
 

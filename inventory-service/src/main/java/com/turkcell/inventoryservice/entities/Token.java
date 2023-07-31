@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.UUID;
 
@@ -20,12 +21,11 @@ public class Token {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name="confirmation_token")
-    private String confirmationToken;
+    private String name;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date createdDate;
+    private LocalDateTime createdDate;
 
-    @OneToOne
+    @OneToOne(mappedBy = "token",cascade = CascadeType.ALL, orphanRemoval = true)
     private User user;
 }

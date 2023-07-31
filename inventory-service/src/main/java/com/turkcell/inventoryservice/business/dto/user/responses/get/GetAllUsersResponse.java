@@ -12,10 +12,11 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GetAllUsersResponse {
-    private UUID id;
-    private UUID tokenId;
+    private String id;
 
-    private UUID emailId;
+    private String tokenId;
+
+    private String emailId;
     private String username;
 
     private String firstName;

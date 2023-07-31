@@ -7,9 +7,11 @@ import com.turkcell.inventoryservice.business.dto.user.responses.create.CreateUs
 import com.turkcell.inventoryservice.business.dto.user.responses.get.GetAllUsersResponse;
 import com.turkcell.inventoryservice.business.dto.user.responses.get.GetUserResponse;
 import com.turkcell.inventoryservice.business.dto.user.responses.update.UpdateUserResponse;
+import com.turkcell.inventoryservice.entities.User;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -46,5 +48,15 @@ public class UserController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable UUID id) {
         service.delete(id);
+    }
+
+    @PostMapping("/register/{id}")
+    public ResponseEntity<?> registerUser(@PathVariable UUID id) {
+        return service.sendMailMessage(id);
+    }
+
+    @RequestMapping(value="/confirm-account/{id}", method= {RequestMethod.GET, RequestMethod.POST})
+    public ResponseEntity<?> confirmUserAccount(@PathVariable UUID id){
+        return service.confirmEmail(id);
     }
 }

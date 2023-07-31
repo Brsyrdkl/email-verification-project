@@ -14,6 +14,8 @@ import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -47,6 +49,8 @@ public class TokenManager implements TokenService {
     @Override
     public CreateTokenResponse add(CreateTokenRequest request) {
         var token = mapper.map(request, Token.class);
+        token.setId(UUID.randomUUID());
+        token.setCreatedDate(LocalDateTime.now());
         repository.save(token);
         var response = mapper.map(token, CreateTokenResponse.class);
 

@@ -1,6 +1,8 @@
 package com.turkcell.inventoryservice.business.concretes;
 
+import com.turkcell.commonpackageemail.utils.mappers.ModelMapperService;
 import com.turkcell.inventoryservice.business.abstracts.EMailService;
+import com.turkcell.inventoryservice.business.abstracts.TokenService;
 import com.turkcell.inventoryservice.business.abstracts.UserService;
 import com.turkcell.inventoryservice.business.dto.user.requests.create.CreateUserRequest;
 import com.turkcell.inventoryservice.business.dto.user.requests.update.UpdateUserRequest;
@@ -9,14 +11,14 @@ import com.turkcell.inventoryservice.business.dto.user.responses.get.GetAllUsers
 import com.turkcell.inventoryservice.business.dto.user.responses.get.GetUserResponse;
 import com.turkcell.inventoryservice.business.dto.user.responses.update.UpdateUserResponse;
 import com.turkcell.inventoryservice.business.rules.UserBusinessRules;
+import com.turkcell.inventoryservice.entities.EMail;
 import com.turkcell.inventoryservice.entities.Token;
-import com.turkcell.inventoryservice.entities.User;
+import com.turkcell.inventoryservice.entities.User;;
 import com.turkcell.inventoryservice.repository.EMailRepository;
 import com.turkcell.inventoryservice.repository.TokenRepository;
 import com.turkcell.inventoryservice.repository.UserRepository;
 
 import lombok.AllArgsConstructor;
-import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
@@ -30,10 +32,11 @@ public class UserManager implements UserService {
 
     private final UserRepository repository;
     private final TokenRepository tokenRepository;
-    private final EMailRepository emailRepository;
+    private final EMailRepository eMailRepository;
     private final EMailService eMailService;
+    private final TokenService tokenService;
     private final UserBusinessRules rules;
-    private final ModelMapper mapper;
+    private final ModelMapperService mapper;
 
 
     @Override
@@ -41,7 +44,7 @@ public class UserManager implements UserService {
         var users = repository.findAll();
         var response = users
                 .stream()
-                .map(user -> mapper.map(user, GetAllUsersResponse.class))
+                .map(user -> mapper.forResponse().map(user, GetAllUsersResponse.class))
                 .toList();
 
         return response;
@@ -51,19 +54,18 @@ public class UserManager implements UserService {
     public GetUserResponse getById(UUID id) {
         rules.checkIfUserExists(id);
         var user = repository.findById(id).orElseThrow();
-        var response = mapper.map(user, GetUserResponse.class);
+        var response = mapper.forResponse().map(user, GetUserResponse.class);
 
         return response;
     }
 
     @Override
     public CreateUserResponse add(CreateUserRequest request) {
-        var user = mapper.map(request, User.class);
+        var user = mapper.forRequest().map(request, User.class);
         user.setEnabled(false);
         user.setId(UUID.randomUUID());
-        sendMailMessage(user);
-        confirmEmail(user.getToken().getConfirmationToken());
-        var response = mapper.map(user, CreateUserResponse.class);
+        repository.save(user);
+        var response = mapper.forResponse().map(user, CreateUserResponse.class);
 
         return response;
     }
@@ -71,10 +73,10 @@ public class UserManager implements UserService {
     @Override
     public UpdateUserResponse update(UUID id, UpdateUserRequest request) {
         rules.checkIfUserExists(id);
-        var user = mapper.map(request, User.class);
+        var user = mapper.forRequest().map(request, User.class);
         user.setId(id);
         repository.save(user);
-        var response = mapper.map(user, UpdateUserResponse.class);
+        var response = mapper.forResponse().map(user, UpdateUserResponse.class);
 
         return response;
     }
@@ -84,30 +86,30 @@ public class UserManager implements UserService {
         rules.checkIfUserExists(id);
         repository.deleteById(id);
     }
+    @Override
+    public ResponseEntity<?> sendMailMessage(UUID userId){
 
-    public ResponseEntity<?> sendMailMessage(User user){
-
-        Token token = tokenRepository.findTokenById(user.getToken().getId());
+        Token token = tokenRepository.findTokenByUserId(userId);
         SimpleMailMessage mailMessage = new SimpleMailMessage();
 
-        mailMessage.setTo(user.getEMail().getEmail());;
+        mailMessage.setTo(eMailRepository.findEMailByUserId(userId).getName());
         mailMessage.setSubject("Complete Registration!");
         mailMessage.setText("To confirm your account, please click here : "
-                +"http://localhost:8085/confirm-account?token="+token.getConfirmationToken());
+                +"http://localhost:9011/inventory-service/api/users/confirm-account/"+userId);
         eMailService.sendEmail(mailMessage);
 
-        System.out.println("Confirmation Token: " + token.getConfirmationToken());
+        System.out.println("Confirmation Token: " + token.getId());
 
         return ResponseEntity.ok("Verify email by the link sent on your email address");
 
     }
-
-    public ResponseEntity<?> confirmEmail(String confirmationToken) {
-        Token token = tokenRepository.findByToken(confirmationToken);
+    @Override
+    public ResponseEntity<?> confirmEmail(UUID userId) {
+        Token token = tokenRepository.findTokenByUserId(userId);
 
         if(token != null)
         {
-            User user = repository.findByUserTokenIgnoreCase(token.getId());
+            User user = repository.findUserById(userId);
             user.setEnabled(true);
             repository.save(user);
             return ResponseEntity.ok("Email verified successfully!");
