@@ -1,12 +1,6 @@
 version: '3.8'
 
 services:
-  kafkadbemail:
-    image: bashj79/kafka-kraft
-    ports:
-      - "9092:9092"
-    volumes:
-      - kafkadbemail_data:/opt/kafka/kafka-logs
 
   inventorydb:
     container_name: inventorydb
@@ -21,10 +15,7 @@ services:
     volumes:
       - inventorydb_data:/data/db
 
-
-
 volumes:
-  kafkadbemail_data:
   inventorydb_data:
 
 networks:

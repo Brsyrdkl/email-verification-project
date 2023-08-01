@@ -3,8 +3,6 @@ L
 inventory-service/.gitignore,5\4\54bbdce7478dcbdd692398e630cfd000a2d5a000
 d
 4inventory-service/src/main/resources/application.yml,7\b\7b8fc05d9cddc68f2426daf34b37ac870e018f85
-|
-Lapi-gateway/src/main/java/com/turkcell/apigateway/ApiGatewayApplication.java,e\0\e08390a65de809a80c497f5afd0677d34bffcb22
 ï
 ecommon-package-email/src/main/java/com/turkcell/commonpackageemail/CommonPackageEmailApplication.java,c\7\c7b1438f8174a121f4ebc68d36985bea1fab4982
 H
@@ -15,12 +13,8 @@ C
 api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
 í
 binventory-service/src/main/java/com/turkcell/inventoryservice/api/controllers/EMailController.java,e\c\ec04dabd2ec44206904fd4e905a58191e7e5fb86
-B
-docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
 I
 inventory-service/pom.xml,e\3\e347da292c40d252c508703eddff460d1f378f1c
-L
-common-package-email/pom.xml,8\1\817fe7511589913b97f4961454ecdacb7dcf4ba3
 í
 binventory-service/src/main/java/com/turkcell/inventoryservice/api/controllers/TokenController.java,9\b\9b67274a69f78c38029ccc0a8865f62e09f17714
 í
@@ -55,15 +49,9 @@ binventory-service/src/main/java/com/turkcell/inventoryservice/business/abstract
 ]inventory-service/src/main/java/com/turkcell/inventoryservice/repository/EMailRepository.java,0\6\067698e7e6066b795321ffa59e204152111a3282
 Å
 Qinventory-service/src/main/java/com/turkcell/inventoryservice/entities/EMail.java,2\b\2b71431b3fe4cf0a5c533132f1377fb0fec3e078
-Ä
-Pinventory-service/src/main/java/com/turkcell/inventoryservice/entities/User.java,9\a\9adbca73f3f454c9f0b1cc6c40200c9a68d00507
 ë
 ainventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/UserManager.java,a\d\add968e76cd1a2d569987fc738021efe8fa0a36a
 Å
 Qinventory-service/src/main/java/com/turkcell/inventoryservice/entities/Token.java,5\4\54a80c57f52f17f4fc6a7512f0bcb7950b55bb1f
 í
-binventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/TokenManager.java,7\6\76c8007d9ad0f265b88c39f52ccb38e04a573790
-í
 binventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/EMailManager.java,a\f\af7fa54b5dcdca26e09dedaae660ce529d13afe5
-ë
-ainventory-service/src/main/java/com/turkcell/inventoryservice/api/controllers/UserController.java,3\b\3b8d7815ee93fb8f24a59b9b0ebada2df97681b2
