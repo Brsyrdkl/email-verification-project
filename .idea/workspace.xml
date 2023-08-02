@@ -5,21 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73a7797b-ff60-4aca-aaf8-1c60f75d0887" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b8d7815ee93fb8f24a59b9b0ebada2df97681b2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76c8007d9ad0f265b88c39f52ccb38e04a573790" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/817fe7511589913b97f4961454ecdacb7dcf4ba3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e08390a65de809a80c497f5afd0677d34bffcb22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b71431b3fe4cf0a5c533132f1377fb0fec3e078" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54a80c57f52f17f4fc6a7512f0bcb7950b55bb1f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/add968e76cd1a2d569987fc738021efe8fa0a36a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af7fa54b5dcdca26e09dedaae660ce529d13afe5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3b8d7815ee93fb8f24a59b9b0ebada2df97681b2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/6/76c8007d9ad0f265b88c39f52ccb38e04a573790" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/817fe7511589913b97f4961454ecdacb7dcf4ba3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/0/e08390a65de809a80c497f5afd0677d34bffcb22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/b/2b71431b3fe4cf0a5c533132f1377fb0fec3e078" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/4/54a80c57f52f17f4fc6a7512f0bcb7950b55bb1f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/d/add968e76cd1a2d569987fc738021efe8fa0a36a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/f/af7fa54b5dcdca26e09dedaae660ce529d13afe5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/EMailManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/EMailManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/TokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/TokenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/user/responses/get/GetAllUsersResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/turkcell/inventoryservice/business/dto/user/responses/get/GetAllUsersResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/brsyr/Desktop/JAVA PROJECTS/rent-a-car-microservice",
+    "last_opened_file_path": "D:/TurkcellStajProjects/email-verification",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,7 +112,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.turkcell.apigateway.ApiGatewayApplication" />
@@ -174,7 +173,8 @@
       <workItem from="1690459076965" duration="831000" />
       <workItem from="1690637115309" duration="5436000" />
       <workItem from="1690834561213" duration="214000" />
-      <workItem from="1690878896941" duration="4523000" />
+      <workItem from="1690878896941" duration="5938000" />
+      <workItem from="1690966217975" duration="1555000" />
     </task>
     <servers />
   </component>

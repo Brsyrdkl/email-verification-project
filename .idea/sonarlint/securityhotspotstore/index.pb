@@ -47,11 +47,7 @@ binventory-service/src/main/java/com/turkcell/inventoryservice/business/abstract
 \inventory-service/src/main/java/com/turkcell/inventoryservice/repository/UserRepository.java,1\1\119babaa15b6ffe2336f3d9836afdd86a948a44a
 ç
 ]inventory-service/src/main/java/com/turkcell/inventoryservice/repository/EMailRepository.java,0\6\067698e7e6066b795321ffa59e204152111a3282
-í
-binventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/EMailManager.java,a\f\af7fa54b5dcdca26e09dedaae660ce529d13afe5
-Å
-Qinventory-service/src/main/java/com/turkcell/inventoryservice/entities/Token.java,5\4\54a80c57f52f17f4fc6a7512f0bcb7950b55bb1f
-Å
-Qinventory-service/src/main/java/com/turkcell/inventoryservice/entities/EMail.java,2\b\2b71431b3fe4cf0a5c533132f1377fb0fec3e078
-ë
-ainventory-service/src/main/java/com/turkcell/inventoryservice/business/concretes/UserManager.java,a\d\add968e76cd1a2d569987fc738021efe8fa0a36a
+|
+Lapi-gateway/src/main/java/com/turkcell/apigateway/ApiGatewayApplication.java,e\0\e08390a65de809a80c497f5afd0677d34bffcb22
+L
+common-package-email/pom.xml,8\1\817fe7511589913b97f4961454ecdacb7dcf4ba3

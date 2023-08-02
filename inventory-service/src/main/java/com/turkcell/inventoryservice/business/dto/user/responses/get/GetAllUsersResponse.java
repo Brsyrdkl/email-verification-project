@@ -15,8 +15,10 @@ public class GetAllUsersResponse {
     private String id;
 
     private String tokenId;
+    private String tokenName;
 
     private String emailId;
+    private String emailName;
     private String username;
 
     private String firstName;
